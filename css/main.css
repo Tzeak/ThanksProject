@@ -1,0 +1,19 @@
+body {
+	background-color: #990022;
+}
+ul {
+	list-style: none;
+}
+
+nav a, nav a:visited {
+	color: #fff;
+	/*text-decoration: none;*/
+}
+#wrapper {
+	text-align: center;
+	max-width: 900px;
+	color: #000000;
+	background-color: #6ab47b;
+	margin: 0 auto;
+}
+
