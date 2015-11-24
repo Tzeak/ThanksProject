@@ -22,22 +22,45 @@ img {
 nav ul {
 	/*To remove bullet points*/
 	list-style: none;
+	margin: 0 10px;
+	padding: 10px;
 }
 nav li {
 
-	/*I'm not sure this does anythign
-	float: center;*/
+	/*This makes text one line but maintain it as a block*/
+	display: inline-block;
+	
 }
 
 /***************
   HEADING
  **************/
 
-h1 { 
+body { 
 	/*Testing neat online fonts and junk*/
 	font-family: 'Roboto Condensed', sans-serif; /* Something is screwing up here*/
-	font-size: 1.75em;
 	/*font-weight: normal;*/
+}
+h1 {
+	font-weight: 1.75em;
+}
+header {
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0 auto;
+	padding: 0.5%;
+	text-align: center;
+	max-width: 1000px;
+}
+nav {
+	margin: 0 auto;
+	padding: 0.5%;
+	text-align: center;
+	max-width: 1000px;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
 }
 
 /***************
@@ -51,8 +74,41 @@ footer {
 	color: #ccc;
 }
 /***************
+  COLOR
+ **************/
+
+
+body {
+	background-color: #990022;
+}
+header {
+	background-color: #4a4;
+}
+nav {
+	background-color: #770022;
+}
+nav a, nav a:visited {
+	color: #fff;
+	/*text-decoration: none;*/
+}
+nav a:hover {
+	color: #999;
+}
+
+#wrapper {
+	color: #000000;
+	background-color: #800;
+}
+
+/***************
   PAGE: Index.html
  **************/
+
+#wrapper {
+	text-align: center;
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
 #gallery {
 	margin: 0;
@@ -72,31 +128,4 @@ footer {
 	font-size: 0.75em;
 	color: #bdc3c7;
 }
-
-/***************
-  COLOR
- **************/
-
-
-body {
-	background-color: #990022;
-}
-nav {
-	background-color: #770022;
-}
-nav a, nav a:visited {
-	color: #fff;
-	/*text-decoration: none;*/
-}
-nav a:hover {
-	color: #999;
-}
-#wrapper {
-	text-align: center;
-	max-width: 900px;
-	color: #000000;
-	background-color: #6ab47b;
-	margin: 0 auto;
-}
-
 
