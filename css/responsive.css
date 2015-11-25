@@ -1,17 +1,66 @@
-@media screen and (min-width: 480px) {
-	body {
-		background-color: navy;
-	}
+/*
+ * File: responsive.css
+ * 
+ * Description:	The responsive.css holds all of the responsive 
+ *		styling for the Lesson Planning Application.
+ *		Depending on the size and style of the screen, the 
+ *		design would theoretically change. Call
+ *		443-4242-042 for a good time ;)
+ */
+
+/*Note: Media Screens must be placed at the bottom of the page */
+/*Otherwise after all the other css has been placed*/
+
+@media screen and (min-width: 580px) {
 	/* This means if the style is not a printed style
 	 * and the screen is larger than 480px, then
 	 * use these css rules
 	 */
-	
 
+ 
+/***************
+  GENERAL
+ **************/
+
+	#gallery li {
+		width: 28.33333%;
+	}
+
+	#gallery li:nth-child(4n) { 
+		/*This is to stop awkward breaks*/
+		clear: left;
+	}
 }
 
 @media screen and (min-width: 660px) {
-	body {
-		background-color: darkgreen;
+
+/***************
+  HEADER
+ **************/
+ 	nav {
+		background: none;
+		float: left;
+		font-size: 1.125em;
+		margin-right: 0%; 
+		text-align: right;
+		width: 50%; 
 	}
+
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 50%;
+		border-bottom: 5px solid #599a68;
+		color: white;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	#wrapper {
+		clear: both;
+	}
+	
 }
